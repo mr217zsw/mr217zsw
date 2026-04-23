@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.upload-section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.file-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.file-label:hover {
+  background-color: #45a049;
+}
+
+/* 图片容器样式 */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 延长线样式 */
+.line {
+  position: absolute;
+  border-color: #333;
+}
+
+.top-left-h, .top-right-h, .bot-left-h, .bot-right-h {
+  width: 30px;
+  height: 0;
+  border-top: 2px solid;
+}
+
+.top-left-v, .top-right-v, .bot-left-v, .bot-right-v {
+  width: 0;
+  height: 30px;
+  border-left: 2px solid;
+}
+
+/* 图片尺寸标注 */
+.label {
+  position: absolute;
+  font-size: 14px;
+  color: black;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2px 5px;
+}
+
+.label-top {
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.label-left {
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+/* 滚动区域标注 */
+.scroll-area {
+  position: absolute;
+  top: 110px;
+  left: 110px;
+  right: 110px;
+  bottom: 110px;
+  border: 2px dashed red;
+  background: rgba(255, 0, 0, 0.2);
+}
+
+.margin-label {
+  position: absolute;
+  font-size: 13px;
+  color: #222;
+  font-weight: bold;
+  background: white;
+  padding: 2px 4px;
+}
+
+#topLabel {
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#bottomLabel {
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#leftLabel {
+  left: 55px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#rightLabel {
+  right: 55px;
+  top: 50%;
+  transform: translateY(-50%);
+}
